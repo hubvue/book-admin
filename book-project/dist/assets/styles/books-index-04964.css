@@ -1,0 +1,71 @@
+/* 搜索栏 + 添加图书 */
+.serch{
+    display:flex;
+    justify-content:space-between;
+    margin:20px 0;
+    box-shadow:0 0 3px 0 rgba(0,0,0,.5);
+    padding:10px;
+    border-radius:5px;
+}
+.serch form{
+    display:flex;
+}
+.serch form input {
+    margin-left:10px;
+}
+.serch form [type="submit"]{
+    height : 34px;
+}
+
+/* 查看 修改 删除 图标 */
+
+.delete-icon::before{
+    content:"\e020";
+    color: #007bff;
+    cursor: pointer;
+}
+.update-icon::before{
+    content:"\270f";
+}
+.view-icon::before{
+    content:"\e105";
+}
+/* list */
+.table{
+    padding:20px;
+    box-shadow:0 0 3px 0 rgba(0,0,0,.5);
+    border-radius:12px;
+}
+.table span{
+    color:#007bff;
+    cursor:pointer;
+}
+#navbarNav{
+    flex-direction:row-reverse;
+}
+footer{
+    margin-top:100px;
+    height:50px;
+    text-align:center;
+    line-height:50px;
+    color:#666;
+}
+.title-nav{
+    padding:20px;
+}
+.title-nav > a{
+    text-decoration: none;
+    font-size:16px;
+}
+.title-nav > span{
+    color :#666;
+}
+.title-nav > a::after{
+    content:"/";
+    display:inline-block;
+    margin:0 8px;
+    color:#aaa;
+}
+.wrapper{
+    min-height:500px;
+}

@@ -1,0 +1,32 @@
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">书号</th>
+            <th scope="col">书名</th>
+            <th scope="col">作者</th>
+            <th scope="col">出版社</th>
+            <th scope="col">价格</th>
+            <th scope="col">入库时间</th>
+            <th scope="col">操作</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for book in data %}
+        <tr>
+            <th scope="row">{{data.indexOf(book) + 1}}</th>
+            <td>{{ book.book_isbn }}</td>
+            <td>{{ book.book_name }}</td>
+            <td>{{ book.book_author }}</td>
+            <td>{{ book.book_press }}</td>
+            <td>{{ book.book_price}}</td>
+            <td>{{ book.book_time }}</td>
+            <td>
+                <a href="/book/view?id={{ book.book_id}}" id="view{{book.book_id}}" title="view"><span class="fa fa-eye"></span></a>
+                <a href="/book/update?id={{ book.book_id}}" id="update{{book.book_id}}" title='update'><span class="fa fa-pencil"></span></a>
+                <span class="fa fa-trash" title="delete"  data-id="{{ book.book_id}}"></span>
+            </td>
+        </tr>
+        {% endfor%}
+    </tbody>
+</table>

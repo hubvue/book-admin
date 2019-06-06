@@ -1,0 +1,42 @@
+.form-content{
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 0 3px 0 rgba(0,0,0,.5);
+    margin-top:20px;
+}
+.form-content textarea{
+    width:100%;
+}
+.btn-wrap{
+    margin:10px 0;
+    text-align:center;
+}
+#navbarNav{
+    flex-direction:row-reverse;
+}
+footer{
+    margin-top:100px;
+    height:50px;
+    text-align:center;
+    line-height:50px;
+    color:#666;
+}
+.title-nav{
+    padding:20px;
+}
+.title-nav > a{
+    text-decoration: none;
+    font-size:16px;
+}
+.title-nav > span{
+    color :#666;
+}
+.title-nav > a::after{
+    content:"/";
+    display:inline-block;
+    margin:0 8px;
+    color:#aaa;
+}
+.wrapper{
+    min-height:500px;
+}

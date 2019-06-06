@@ -1,0 +1,29 @@
+#navbarNav{
+    flex-direction:row-reverse;
+}
+footer{
+    margin-top:100px;
+    height:50px;
+    text-align:center;
+    line-height:50px;
+    color:#666;
+}
+.title-nav{
+    padding:20px;
+}
+.title-nav > a{
+    text-decoration: none;
+    font-size:16px;
+}
+.title-nav > span{
+    color :#666;
+}
+.title-nav > a::after{
+    content:"/";
+    display:inline-block;
+    margin:0 8px;
+    color:#aaa;
+}
+.wrapper{
+    min-height:500px;
+}

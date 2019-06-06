@@ -1,0 +1,21 @@
+<div class="book-view">
+    <div class="row">
+        <div class="col-md-4 book-img">
+            <img src="{{data.book_image}}" alt="" srcset="">
+        </div>
+        <div class="col-md-8 book-message">
+            <p><span>书名：</span>{{data.book_name}}</p>
+            <p><span>ISBN：</span>{{data.book_isbn}}</p>
+            <p><span>作者：</span>{{data.book_author}}</p>
+            <p><span>出版社：</span>{{ data.book_press }}</p>
+            <p><span>价格：</span>{{ data.book_price }}</p>
+            <p><span>时间：</span>{{ data.book_time }}</p>
+        </div>
+    </div>
+    <div class="book_introduction">
+        <p>简介：</p>
+        <p>
+            {{ data.book_introduction}}
+        </p>
+    </div>
+</div>

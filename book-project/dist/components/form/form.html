@@ -1,0 +1,40 @@
+<form class='form-content' id='form' data="{{data.book_id}}">
+    
+    <div class="form-group" >
+        <label for="bookIsbn">书号</label>
+        <input type="text" class="form-control" id="bookIsbn" value="{{data.book_isbn}}" name="book_isbn">   
+    </div>
+    <div class="form-group">
+        <label for="bookName">书名</label>
+        <input type="text" class="form-control" id="bookName" value="{{data.book_name}}" name="book_name">   
+    </div>
+    <div class="form-group">
+        <label for="bookAuthor">作者</label>
+        <input type="text" class="form-control" id="bookAuthor" value="{{data.book_author}}" name="book_author">   
+    </div>
+    <div class="form-group">
+        <label for="bookPress">出版社</label>
+        <input type="text" class="form-control" id="bookPress" value="{{data.book_press}}" name="book_press">   
+    </div>
+    <div class="form-group">
+        <label for="bookPrice">价格</label>
+        <input type="text" class="form-control" id="bookPrice" value="{{data.book_price}}" name="book_price">   
+    </div>
+    <div class="form-group">
+        <label for="bookTime">入库时间</label>
+        <input type="text" class="form-control" id="bookTime" value="{{data.book_time}}" name="book_time">   
+    </div>
+    <div class="form-group">
+        <label for="bookImgUrl">图片地址</label>
+        <input type="text" class="form-control" id="bookImgUrl" value="{{data.book_image}}" name="book_image">   
+    </div>
+    <div class="form-group">
+        <label for="bookIntroduction">图书简介</label>
+        <p>
+            <textarea type="text" id="" cols="120" rows="4" id="bookIntroduction" name="book_introduction">{{data.book_introduction}}</textarea>
+        </p>
+    </div>
+    <div class="btn-wrap">
+            <input type="button" class="btn btn-primary" id="btn" value="提交">
+    </div>
+</form> 

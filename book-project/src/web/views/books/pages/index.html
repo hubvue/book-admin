@@ -1,0 +1,26 @@
+{% extends 'pages:pages/layout.html'%}
+
+{% block title %} {{ title }} {% endblock %}
+
+{% block head %}
+        <!-- injectcss -->
+{% endblock %}
+
+{% block navigation %}
+    {% include 'components:navigation/navigation.html'%}
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row title-nav">
+        <a href="/">首页</a>
+        <span>图书信息管理</span>
+    </div>
+    {% include 'components:createAndSearch/createAndSearch.html'%}
+    {% include 'components:list/list.html'%}
+</div>
+{% endblock %}
+
+{% block foot %}
+    <!-- injectjs -->
+{% endblock %}
